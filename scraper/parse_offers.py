@@ -1,8 +1,20 @@
 import json
 from bs4 import BeautifulSoup
 import os
+import yaml
 
 BASE_PATH = "./BeautifulSoup/lefigaro_immo_scraping/pays_de_la_loire"
+
+
+with open("./config.yml", 'r') as file:
+    try :
+       config = yaml.safe_load(file)
+    except yaml.YAMLError as exc:
+        print(exc)
+
+output_path = config["paths"]["scraped_data_directory"]
+html_pages_path = config["paths"]["html_pages_directory"]
+
 
 def parse_atouts(soup):
     try:

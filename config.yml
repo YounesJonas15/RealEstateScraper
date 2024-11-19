@@ -1,1 +1,3 @@
-BASE_URL: "https://immobilier.lefigaro.fr" 
+paths:
+  scraped_data_directory: "./scraped_data"
+  html_pages_directory: "./html_pages"
