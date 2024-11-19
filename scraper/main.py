@@ -7,7 +7,7 @@ def main():
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--incognito')
     with webdriver.Chrome(options=options) as driver:
-        get_all_pages(driver, count = 1)
-
+        #get_all_pages(driver, count = 1, i_begin=1, mock = False)
+        print(type(driver))
 if __name__ == "__main__":
     main()

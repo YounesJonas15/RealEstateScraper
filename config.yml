@@ -1,3 +1,7 @@
 paths:
-  scraped_data_directory: "./scraped_data"
+  scraped_data_directory: "./scraped_data/all_data.json"
   html_pages_directory: "./html_pages"
+
+urls:
+  BASE_URL: "https://immobilier.lefigaro.fr"
+  url: "/annonces/immobilier-location-maison-rhone+alpes.html?types=maison%2Bneuve,atelier,chalet,chambre%2Bd%2Bhote,manoir,moulin,propriete,ferme,gite,villa,appartement,loft,chambre,duplex&page={}"
